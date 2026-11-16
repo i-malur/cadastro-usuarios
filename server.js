@@ -11,7 +11,7 @@ import cors from 'cors'
 
 const app = express()
 app.use(express.json())
-app.use(cors({ origin: 'http://localhost:5173' }))
+app.use(cors({ origin: ['http://localhost:5173', 'https://front-cadastro-usuarios.vercel.app/'] }))
 
 app.use('/', publicRoutes)
 app.use('/', auth, privateRoutes)

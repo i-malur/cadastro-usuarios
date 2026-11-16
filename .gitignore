@@ -1,0 +1,16 @@
+node_modules
+# Keep environment variables out of version control
+.env
+
+/generated/prisma
+
+# Dependências
+node_modules/
+
+# Variáveis de ambiente
+.env
+
+# Configurações de IDE e assistentes locais
+.agents/
+.claude/
+.windsurf/

@@ -16,6 +16,10 @@ app.use(cors({ origin: 'http://localhost:5173' }))
 app.use('/', publicRoutes)
 app.use('/', auth, privateRoutes)
 
-app.listen(3003, () => console.log('Servidor rodando 🤖'))
+const PORT = process.env.PORT || 3003;
+
+app.listen(PORT, () => {
+    console.log(`Servidor rodando na porta ${PORT} 🤖`);
+});
 
 
